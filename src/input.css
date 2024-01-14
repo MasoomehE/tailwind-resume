@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+
+@font-face {
+  font-family: vazir;
+  src: url(../fonts/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.eot),
+    url(../fonts/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.ttf),
+    url(../fonts/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff),
+    url(../fonts/Farsi-Digits-Without-Latin/Vazir-Bold-FD-WOL.woff2);
+}
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply bg-[#ff0066] font-bold py-3 px-10 rounded-md transition duration-1000 ease-in-out text-white
+        hover:bg-white hover:text-black;
+  }
+  .li {
+    @apply p-3 text-lg text-white;
+  }
+}
